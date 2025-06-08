@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>JavaScript GPA Calculator</h1>
+            <p>Enter assignments and grades to calculate your GPA (out of 5).</p>
+        </header>
+
+        <section>
+            <form id="gpa-form" aria-label="GPA Form">
+                <div>
+                    <label for="assignment-name">Assignment Name:</label>
+                    <input type="text" id="assignment-name" name="assignment" required placeholder="e.g. Math Quiz" />
+                </div>
+                <div>
+                    <label for="grade">Grade (0 - 5):</label>
+                    <input type="number" id="grade" name="grade" step="0.1" min="0" max="5" required
+                        placeholder="e.g. 4.5" />
+                </div>
+                <button type="submit">Add Assignment</button>
+            </form>
+        </section>
+
+        <section id="entries-section">
+            <h2>All Assignments</h2>
+            <ul id="entries-list" aria-live="polite">
+                <!-- Assignment entries will appear here -->
+            </ul>
+        </section>
+
+        <section id="gpa-section">
+            <h2>Current GPA: <span id="gpa-value">0.00</span></h2>
+        </section>
+
+        <footer>
+            <p>Press <strong>"S"</strong> to log all entries to the console.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
