@@ -17,7 +17,7 @@ A simple GPA calculator built using HTML, CSS, and JavaScript. Users can:
 
 ## Group Members
 - Mildred and Junior: HTML/CSS
-- Mutheu Mbithi: JS Logic
+- Ndunge Mbithi: JS Logic
 - All Members : DOM & Events, Git coordination
 
 
